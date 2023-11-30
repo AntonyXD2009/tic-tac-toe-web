@@ -1,6 +1,8 @@
 #title-page {
   color: #AaAaAa;
 }
-title {
-  font-width: bold;
+h1 {
+  color: #aaaaaa;
+	font-weight: bold;
+	font-family: Segoe UI;
 }
