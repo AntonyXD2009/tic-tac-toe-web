@@ -1,5 +1,7 @@
 let currentPlayer = 'X';
 let gameBoard = ['', '', '', '', '', '', '', '', ''];
+let scoreX = 0;
+let scoreO = 0;
 const winningCombinations = [
     [0, 1, 2],
     [3, 4, 5],
@@ -17,6 +19,7 @@ function handleClick(index) {
         document.getElementsByClassName('cell')[index].innerText = currentPlayer;
         if (checkWinner()) {
             alert(`Player ${currentPlayer} wins!`);
+            updateScore();
         } else if (!gameBoard.includes('')) {
             alert('It\'s a tie!');
         } else {
@@ -34,6 +37,16 @@ function checkWinner() {
         }
     }
     return false;
+}
+
+function updateScore() {
+    if (currentPlayer === 'X') {
+        scoreX++;
+        document.getElementById('scoreX').innerText = `Jugador X: ${scoreX}`;
+    } else {
+        scoreO++;
+        document.getElementById('scoreO').innerText = `Jugador O: ${scoreO}`;
+    }
 }
 
 function resetGame() {
