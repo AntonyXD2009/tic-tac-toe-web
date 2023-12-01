@@ -11,6 +11,11 @@ body {
     text-align: center;
 }
 
+board {
+    border-radius: 24px;
+    border: none;
+}
+
 .board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
