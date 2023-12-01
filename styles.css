@@ -1,9 +1,29 @@
-#header-style {
-  color: #aaaaaa;
-  font-weight: bold;
-  font-family: Segoe UI;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
 
-h1 {
-  color: #aaaaaa;
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
 }
