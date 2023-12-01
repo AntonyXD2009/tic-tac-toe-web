@@ -18,10 +18,10 @@ function handleClick(index) {
         gameBoard[index] = currentPlayer;
         document.getElementsByClassName('cell')[index].innerText = currentPlayer;
         if (checkWinner()) {
-            alert(`Player ${currentPlayer} wins!`);
+            alert(`Jugador ${currentPlayer} Gana!`);
             updateScore();
         } else if (!gameBoard.includes('')) {
-            alert('It\'s a tie!');
+            alert('Es un Empate!');
         } else {
             currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
             document.getElementById('turn').innerText = `Turno del jugador: ${currentPlayer}`;
