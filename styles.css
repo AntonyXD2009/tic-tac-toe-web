@@ -12,34 +12,12 @@ body {
     font-weight: bold;
 }
 
-#scoreO {
-    font-family: Arial;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-#scoreX {
-    font-family: Arial;
-    font-size: 12px;
-}
-
-#game-creator {
-   font-family: arial;
-   font-size: 11px;
-   color: #cccccc;
-}
-
-#puntuation-style {
+#scoreO, #scoreX, #puntuation-style, #game-creator {
     font-family: Arial;
 }
 
 .center-panel {
     text-align: center;
-}
-
-board {
-    border-radius: 24px;
-    border: none;
 }
 
 .board {
@@ -60,16 +38,30 @@ board {
     font-weight: bold;
     font-family: Segoe UI;
     cursor: pointer;
-    border-radius: 24px;
     border-color: #aaaaaa;
-    border-size: 2px;
+    border-radius: 24px;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+    border-radius: 24px;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.score-panel {
+    margin-top: 20px;
 }
 
 buttonReset {
     padding: 12px;
-    margin-top: 10px;
+    margin-top: 18px;
     border-radius: 24px;
-    border-size: 2px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #5881C1;
     background-color: #608FD8;
     color: #ffffff;
     font-family: Arial;
@@ -78,19 +70,7 @@ buttonReset {
 }
 
 buttonReset:hover {
-    border-radius: 16px;
-    border-size: 2px;
     color: #aaaaaa;
-    font-size: 12px;
+    border-color: #45678E;
     background-color: #5881C1;
-}
-
-.cell:hover {
-    background-color: #e0e0e0;
-    border-radius: 24px;
-    border: none;
-}
-
-.score-panel {
-    margin-top: 20px;
 }
