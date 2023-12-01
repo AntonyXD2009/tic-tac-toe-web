@@ -38,6 +38,16 @@ board {
     border: none;
 }
 
+buttonReset {
+    border-radius: 24px;
+    border: none;
+}
+
+borderReset:hover {
+    border-radius: 16px;
+    border: none;
+}
+
 .cell:hover {
     background-color: #e0e0e0;
     border-radius: 24px;
