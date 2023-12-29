@@ -19,10 +19,7 @@ body {
   font-weight: bold;
 }
 
-#scoreO,
-#scoreX,
-#puntuation-style,
-#game-creator {
+#scoreO, #scoreX, #puntuation-style, #game-creator {
   font-family: Arial;
 }
 
