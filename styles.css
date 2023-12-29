@@ -4,20 +4,26 @@ body {
   align-items: center;
   height: 96vh;
   margin: 0;
-  background-color: #aaa;
+  background-color: #2e8a29;
 }
 
-.header-game-title {
+.button-panel {
+  padding: 14px;
+  margin: 12px;
+}
+
+.container-grid {
   text-align: center;
-  background-color: #b9b9b9;
+  background-color: #d0d0d0;
   padding: 16px;
   margin: 4px;
   border-radius: 24px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
-h2 {
+
+.game-creator {
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 #turn {
@@ -25,7 +31,10 @@ h2 {
   font-weight: bold;
 }
 
-#scoreO, #scoreX, #puntuation-style, #game-creator {
+#scoreO,
+#scoreX,
+#puntuation-style,
+#game-creator {
   font-family: Arial;
 }
 
@@ -51,7 +60,7 @@ h2 {
   font-weight: bold;
   font-family: Segoe UI;
   cursor: pointer;
-  border-color: #aaaaaa;
+  border-color: #c7c7c7;
   border-radius: 24px;
   border-width: 4px;
   border-style: solid;
@@ -72,9 +81,6 @@ buttonReset {
   padding: 12px;
   margin-top: 18px;
   border-radius: 24px;
-  border-width: 4px;
-  border-style: solid;
-  border-color: #5881C1;
   background-color: #608FD8;
   color: #ffffff;
   font-family: Arial;
@@ -83,7 +89,6 @@ buttonReset {
 }
 
 buttonReset:hover {
-  color: #aaaaaa;
-  border-color: #45678E;
+  color: #d8d8d8;
   background-color: #5881C1;
 }
