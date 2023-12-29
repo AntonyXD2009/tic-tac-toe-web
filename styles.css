@@ -8,6 +8,7 @@ body {
 }
 
 .header-game-title {
+  text-align: center;
   background-color: #b9b9b9;
   padding: 16px;
   margin: 4px;
